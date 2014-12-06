@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
 
+
+
     //workout.html  workout list controller
 
     .controller('ToDoListCtrl', function($scope,$ionicModal) {

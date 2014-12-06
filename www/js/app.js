@@ -68,8 +68,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
                       }],
 
+
                       recipe1: ['$http', function($http){
-                          return $http.get('../api/recipe.json')
+                          return $http.get('../api/recipe.json' )
                               .then(function(result){
 
 
@@ -118,73 +119,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
       })
 
-    .state('tab.friends', {
-      url: '/Newsletter',
-      views: {
-        'tab-friends': {
-          templateUrl: 'tab-friends.html',
-          controller: 'homeCtrl',
 
 
-            resolve:{
-
-                recipe: ['$http', function($http){
-                    return $http.get('../api/recipe.json')
-                        .then(function(response){
-
-
-                            return response.data;
-                        })
-
-                }],
-
-                recipe1: ['$http', function($http){
-                    return $http.get('../api/recipe.json')
-                        .then(function(result){
-
-
-                            return result.data;
-                        })
-
-                }]
-            }
-
-        }
-      }
-    })
-    .state('tab.friend-detail', {
-      url: '/test/:jobId',
-      views: {
-        'tab-friends': {
-          templateUrl: 'friend-detail.html',
-          controller: 'homeCtrl',
-
-            resolve:{
-
-                recipe: ['$http', function($http){
-                    return $http.get('../api/recipe.json')
-                        .then(function(response){
-
-
-                            return response.data;
-                        })
-
-                }],
-
-                recipe1: ['$http', function($http){
-                    return $http.get('../api/recipe.json')
-                        .then(function(result){
-
-
-                            return result.data;
-                        })
-
-                }]
-            }
-
-        }
-      }
-    })
 
       .state('tab.Calc', {
           url: '/Calculator',

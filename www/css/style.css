@@ -1,1 +1,138 @@
 /* Empty. Add your own CSS if you like */
+
+.rightrecipe {
+    float: left;
+    width: 100%;
+}
+
+.leftrecipe {
+    float: left;
+    width: 100%;
+}
+
+.leftrecipe img {
+    float: left;
+}
+
+ul.item {
+    margin-bottom: 10em;
+}
+
+.leftrecipe {
+
+
+    background: #fff;
+    padding:.25em;
+    width:100%;
+
+}
+
+.leftrecipe img {
+    float: left;
+    height: 269px;
+    padding: .5em;
+    width: 100%;
+    border-radius: 15px;
+}
+
+ul.item {
+    background: rgb(172, 195, 174);
+}
+
+.title p {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    font-size: 1.125em;
+    padding: .5em;
+    box-shadow: inset 0px 0px 6px #212221;
+    background: rgb(99, 121, 106);
+    color: #fff;
+    border: 0;
+}
+
+.item h2 {
+    margin: 0px 0 0px 0;
+    font-size: 16px;
+}
+
+.item {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    /* z-index: 2; */
+    display: block;
+    margin: -1px 0 -1px 0;
+    padding: 16px 16px 17px 16px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+}
+
+.scroll.padding {
+    background: rgb(172, 195, 174)
+}
+
+ul.item {
+    border: none;
+}
+
+.bar.bar-positive {
+    border-color: rgb(172, 195, 174);
+    background-color: rgb(172, 195, 174);
+    background-image: linear-gradient(0deg, #145fd7, #145fd7 50%, transparent 50%);
+    color: #fff;
+}
+
+.button.button-stable {
+    border-color: #2B4733;
+    background-color: #435449;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.bar-positive .button.button-icon {
+    border-color: transparent;
+    background: none;
+    color: #435449;
+}
+
+.button.button-positive {
+    border-color: #2B4733;
+    background-color: #435449;
+    color: #fff;
+    border-radius:none!important;
+    width:75%;
+    margin:0 auto;
+}
+
+.bar.bar-calm {
+    border-color: rgb(172, 195, 174);
+    background-color: rgb(172, 195, 174);
+    background-image: linear-gradient(0deg, #1aacc3, #1aacc3 50%, transparent 50%);
+    color: #fff;
+}
+
+.bar-calm .button {
+    border-color: #3F4D45;
+    background-color: #667A7E;
+    color: #fff;
+
+
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.bar-calm .button.active, .bar-calm .button.activated {
+    border-color: #729E85;
+    background-color: #8BA695;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.mainrecipe img {
+    max-width: 150px;
+    border-radius:5px;
+
+    box-shadow:1px 1px 2px #2d2d2d;
+    padding:.4em .4em 1em .4em;
+}

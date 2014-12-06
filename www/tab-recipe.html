@@ -4,13 +4,13 @@
 
             <div class="item item-divider">
 
-                <p>With this app you can:</p>
+                <p>Top Rated Recipes</p>
             </div>
 
             <ion-item ng-repeat="recipe in recipe" class="item" type="item-text-wrap" href="#/tab/test/{{recipe.id}}">
-                <p class="ion-android-checkmark">  {{recipe.title}}</p>
+                <div class="mainrecipe"><img ng-src="{{recipe.image}}"/></div> {{recipe.title}}
             </ion-item>
-            <li ng-repeat="recipe1 in recipe1" class="item"><p class="ion-android-checkmark">  {{recipe1.fullCarName}}</p></li>
+
 
 
         </ul>
@@ -19,25 +19,27 @@
 
 
 <!---"id":0,
-"title":"Tuscan Chicken Pasta",
-"rating":"4.5 / 5",
-"prep":"10 min",
-"cook":"25 min",
-"total":"35 min",
-"ingredients":{
-"ingredients1":"2 oz Barilla Plus penne pasta",
-"ingredients2":"2 chicken breasts, pounded to 1/4 inch thickness",
-"ingredients3":"Salt and pepper",
-"ingredients4":"1 tsp olive oil",
-"ingredients5":"1 clove garlic, crushed",
-"ingredients6":"1/2 tsp dried rosemary",
-"ingredients7":"1 cup cannellini beans, rinsed",
-"ingredients9":"2 tbsp diced roasted red pepper",
-"ingredients10":"4 cups baby spinach leaves",
-"ingredients11":"2 tbsp grated parmesan"
-},
-"image":"img/image1.jpg",
-"directions":"Cook the pasta according to the package directions. While the pasta is boiling, season the chicken on each side with a pinch of salt and pepper, and sear it in a skillet over medium-high heat for 3 to 4 minutes a side. Remove from the skillet and set aside. Add the oil, garlic, rosemary, beans, red pepper, and spinach to the skillet. Cook, turning frequently, until the spinach wilts (1 to 2 minutes). Slice the chicken and drain the pasta; toss them with the bean mixture. Spoon the pasta into two bowls and top each with 1 tablespoon of parmesan."
-},
+"id": 6,
+        "title": "Chicken Pesto Pizza",
+        "calories": "526",
+        "rating": "4.5 / 5",
+        "prep": "15 min",
+        "cook": "10 min",
+        "total": "25 min",
+        "serves": "4",
+        "ingredients": {
+            "ingredients1": "pre-baked pizza shell",
+            "ingredients2": "1/3 cup prepared pesto",
+            "ingredients3": "1 cup cooked chicken cut into small strips",
+            "ingredients4": "1 roasted red pepper, cut into small strips",
+            "ingredients5": "1/2 cup water-packed canned artichoke hearts, rinsed and drained, patted dry and quartered",
+            "ingredients6": "1/2 cup (2 ounces) crumbled goat cheese",
+            "ingredients7": "2 tbsp diced roasted red pepper",
+            "ingredients8": "4 cups baby spinach leaves",
+            "ingredients9": "2 tbsp grated parmesan"
+        },
+        "image": "img/image7.jpg",
+        "directions": "Preheat the oven to 450°F. Place the pizza shell on a baking sheet. Evenly spread the pesto over the crust. Arrange the chicken, pepper strips, and artichokes over the pesto. Top with the cheese. Bake for 10 minutes, or until heated through and the crust is crisp. "
+    },
 -->
 
