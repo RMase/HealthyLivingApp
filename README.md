@@ -25,17 +25,17 @@ AND calculate your BMI!
         
         $ cd <location you want the files to go>
         
-        $ git clone https://github.com/jakerstf/HomeworkPlannerApp.git
+        $ git clone https://github.com/RMase/HealthyLivingApp.git
       
        
 
 3. **Test The App**
     
-    You may need change your directory to "HomeworkPlannerApp." Use the following example if you need to.
+    You may need change your directory to "HealthyLivingApp" Use the following example if you need to.
         
         Example:
         
-        $ cd <file location>HomeworkPlannerApp
+        $ cd <file location>HealthyLivingApp
         
     Then run your local server to test the app.
         
