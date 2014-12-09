@@ -56,6 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                   templateUrl: 'tab-recipe.html',
                   controller: 'homeCtrl',
 
+                  //Ctrl wont load until "Resolve" is returned, This means you can wait for data to become available before showing a view
                   resolve:{
 
                       recipe: ['$http', function($http){
@@ -68,7 +69,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
                       }],
 
-
+                  //Ctrl wont load until "Resolve" is returned, This means you can wait for data to become available before showing a view
                       recipe1: ['$http', function($http){
                           return $http.get('../api/recipe.json' )
                               .then(function(result){
@@ -91,6 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                   controller: 'homeCtrl',
 
                   resolve:{
+                      //Ctrl wont load until "Resolve" is returned
 
                       recipe: ['$http', function($http){
                           return $http.get('../api/recipe.json')
@@ -101,6 +103,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                               })
 
                       }],
+                      //Ctrl wont load until "Resolve" is returned
 
                       recipe1: ['$http', function($http){
                           return $http.get('../api/recipe.json')

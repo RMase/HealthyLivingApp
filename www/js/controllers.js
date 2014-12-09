@@ -62,8 +62,8 @@ angular.module('starter.controllers', [])
 
 
     .controller('bmiCtrl', function ($scope) {
-        $scope.catClass = "default";
-        $scope.catTitle = "Unknown";
+        $scope.Class = "default";
+        $scope.Title = "Unknown";
         $scope.bmi = 0;
 
         $scope.$watch('weight_lb', function (newVal, oldVal, scope) {
@@ -71,7 +71,7 @@ angular.module('starter.controllers', [])
                 var w_kg = (newVal * 0.453592);
                 var h_m = (scope.height_foot * 0.3048) + (scope.height_inch * 0.0254);
 
-                scope.bmi = (h_m) ? (w_kg/(h_m * h_m)) : 0.0;
+                scope.bmi = (h_m) ? (h_m/(h_m * h_m)) : 0.0;
             } else {
                 scope.bmi = 0;
             }
@@ -98,26 +98,26 @@ angular.module('starter.controllers', [])
         });
 
 
-
+//$watch function constantly looks at the field and recognizes the changes.
 
         $scope.$watch('bmi', function (newVal, oldVal, scope) {
             if(newVal) {
                 if((newVal <= 24) && (newVal >= 19)) {
-                    scope.catClass = "success";
-                    scope.catTitle = "Normal";
+                    scope.Class = "success";
+                    scope.Title = "Normal";
                 } else if((newVal < 19) && (newVal > 0)) {
-                    scope.catClass = "danger";
-                    scope.catTitle = "Underweight";
+                    scope.Class = "danger";
+                    scope.Title = "Underweight";
                 } else if(newVal > 24) {
-                    scope.catClass = "danger";
-                    scope.catTitle = "Overweight";
+                    scope.Class = "danger";
+                    scope.Title = "Overweight";
                 } else {
-                    scope.catClass = "default";
-                    scope.catTitle = "Unknown";
+                    scope.Class = "default";
+                    scope.Title = "Unknown";
                 }
             } else {
-                scope.catClass = "default";
-                scope.catTitle = "Unknown";
+                scope.Class = "default";
+                scope.Title = "Unknown";
             }
         });
 
